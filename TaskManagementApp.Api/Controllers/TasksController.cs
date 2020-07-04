@@ -23,7 +23,7 @@ namespace TaskManagementApp.Api.Controllers
             return await Mediator.Send(new GetAllTasksQuery());
         }
 
-        [HttpGet("/{id}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<TaskDto>> Get(int id)
         {
             return await Mediator.Send(new GetTaskByIdQuery { Id = id });
