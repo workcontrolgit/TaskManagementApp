@@ -25,7 +25,7 @@ namespace TaskManagementApp.Api
             services.AddControllers();
             services.AddOpenApiDocument(config =>
             {
-                config.Title = "Task Management App WebAPI";
+                config.Title = "Time Management App WebAPI";
             });
         }
 
